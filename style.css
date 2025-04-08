@@ -8,14 +8,18 @@ button {
   cursor: pointer;
 }
 
+.noImgFound {
+  width: 35%;
+}
+
 header {
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #ececec;
   display: flex;
   gap: 2rem;
   padding-left: 2rem;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 header > button {
@@ -23,4 +27,86 @@ header > button {
   border-radius: 10px;
   background-color: #fdfdfd;
   border: 1px solid #999999;
+}
+
+.contentContainer {
+  height: 81vh;
+  display: flex;
+  gap: 8px;
+  margin: auto 3px;
+}
+
+.content {
+  height: 75.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d9;
+}
+
+.layoutSelectionContainer {
+  height: 35px;
+  background-color: #ececec;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.layoutSelectionContainer > div {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.layoutSelectionContainer > img {
+  height: 1.5rem;
+}
+
+.fileListContainer {
+  background-color: #ececec;
+  width: 17vw;
+}
+
+.mainContentContainer {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toolsContainer {
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.toolsContainer > div:nth-child(1) {
+  height: 27vh;
+  background-color: #ececec;
+}
+
+.toolsContainer > div:nth-child(2) {
+  height: 27vh;
+  background-color: #ececec;
+}
+
+.toolsContainer > div:nth-child(3) {
+  height: 20vh;
+  background-color: #ececec;
+}
+
+.toolsContainer > div:nth-child(4) {
+  height: 4.6vh;
+  background-color: #ececec;
+}
+
+footer {
+  height: 12vh;
+  margin-top: 6px;
+  background-color: #ececec;
 }
