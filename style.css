@@ -61,8 +61,9 @@ header > button {
   align-items: center;
 }
 
-.layoutSelectionContainer > img {
+.layoutSelectionContainer > div > img {
   height: 1.5rem;
+  cursor: pointer;
 }
 
 .fileListContainer {
