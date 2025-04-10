@@ -1,0 +1,22 @@
+.fileListContainer > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 17vw;
+}
+
+.fileListContainer > div > button {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 20px;
+  padding: 0.2rem;
+  margin-top: 5px;
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileListContainer > div > button > img {
+  margin-right: 0.5rem;
+  /* didn't make icons here any bigger to avoid them getting blurry */
+}
