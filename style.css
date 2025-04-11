@@ -31,14 +31,14 @@ header > button {
 }
 
 .contentContainer {
-  height: 81vh;
+  height: 84vh;
   display: flex;
   gap: 8px;
   margin: auto 3px;
 }
 
 .content {
-  height: 75.5vh;
+  height: 79.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +46,7 @@ header > button {
 }
 
 .layoutSelectionContainer {
-  height: 35px;
+  height: 30px;
   background-color: #ececec;
   color: #999999;
   display: flex;
@@ -63,7 +63,7 @@ header > button {
 }
 
 .layoutSelectionContainer > div > img {
-  height: 1.5rem;
+  height: 1.2rem;
   cursor: pointer;
 }
 
@@ -83,32 +83,32 @@ header > button {
   width: 18vw;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0px;
   justify-content: space-between;
 }
 
 .toolsContainer > div:nth-child(1) {
-  height: 27vh;
+  height: 28vh;
   background-color: #ececec;
 }
 
 .toolsContainer > div:nth-child(2) {
-  height: 27vh;
+  height: 28vh;
   background-color: #ececec;
 }
 
 .toolsContainer > div:nth-child(3) {
-  height: 20vh;
+  height: 23vh;
   background-color: #ececec;
 }
 
 .toolsContainer > div:nth-child(4) {
-  height: 4.6vh;
+  height: 4vh;
   background-color: #ececec;
 }
 
 footer {
-  height: 12vh;
+  height: 9vh;
   margin-top: 6px;
   background-color: #ececec;
 }

@@ -92,3 +92,17 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+
+/* colour part */
+
+.colourCorrection {
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toolText {
+  font-size: 12px;
+  font-weight: 600;
+}
