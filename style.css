@@ -7,6 +7,10 @@
 
 button {
   cursor: pointer;
+  padding: 0.2rem 1.1rem;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  border: 1px solid #999999;
 }
 
 .noImgFound {
@@ -21,13 +25,6 @@ header {
   gap: 2rem;
   padding-left: 2rem;
   margin-bottom: 8px;
-}
-
-header > button {
-  padding: 0.2rem 1.1rem;
-  border-radius: 10px;
-  background-color: #fdfdfd;
-  border: 1px solid #999999;
 }
 
 .contentContainer {
@@ -105,6 +102,9 @@ header > button {
 .toolsContainer > div:nth-child(4) {
   height: 4vh;
   background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
