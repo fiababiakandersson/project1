@@ -27,3 +27,15 @@ window.addEventListener("load", function () {
     listBox.appendChild(fileListItem);
   }
 });
+
+// export popup
+
+let isExportPopupOpen = false;
+
+document
+  .getElementById("exportBtn")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    isExportPopupOpen = !isExportPopupOpen;
+  });
