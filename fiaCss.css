@@ -183,3 +183,25 @@ footer {
 .footerImg > img {
   height: 2.5rem;
 }
+
+/* export popup */
+
+.exportPopup {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  z-index: 9999;
+  width: 720px;
+  height: 456px;
+  background-color: white;
+}
+
+.exportPopupBackground {
+  position: absolute;
+  background-color: #0a0a0a53;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
