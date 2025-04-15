@@ -187,21 +187,26 @@ footer {
 /* export popup */
 
 .exportPopup {
+  background-color: white;
   position: absolute;
   top: 15%;
   left: 25%;
   z-index: 9999;
   width: 720px;
   height: 456px;
-  background-color: white;
 }
 
 .exportPopupBackground {
-  position: absolute;
+  display: none;
   background-color: #0a0a0a53;
+  position: absolute;
   z-index: 999;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+.visible {
+  display: block;
 }

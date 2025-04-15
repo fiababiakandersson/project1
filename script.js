@@ -32,6 +32,8 @@ window.addEventListener("load", function () {
 
 let isExportPopupOpen = false;
 
+const popup = document.getElementById("exportPopup");
+
 document
   .getElementById("exportBtn")
   .addEventListener("click", function (event) {
@@ -39,5 +41,15 @@ document
 
     isExportPopupOpen = !isExportPopupOpen;
 
-    
+    popup.classList.toggle("visible", isExportPopupOpen);
+  });
+
+document
+  .getElementById("cancelButton")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    isExportPopupOpen = false;
+
+    popup.classList.remove("visible");
   });
