@@ -86,6 +86,27 @@
 
   <!-- export popup -->
   <div id="exportPopup" class="exportPopupBackground">
-    <div class="exportPopup"><button id="cancelButton">Avbryt</button></div>
+    <div class="exportPopup">
+      <p>Exportera</p>
+      <div class="saveBox">
+        <div>
+          <input name="save" type="radio" id="originalPlace" />
+          <label for="originalPlace">Spara till ursprunglig plats</label>
+        </div>
+        <div>
+          <input name="save" type="radio" id="saveIn" />
+          <label for="saveIn">Spara i:</label>
+          <p>User/desktop/files/batchjob/export</p>
+          <label class="fileInput">...</label>
+          <input style="display: none" type="file" />
+        </div>
+        <div class="divider"></div>
+      </div>
+
+      <div>
+        <button id="cancelButton">Avbryt</button>
+        <button id="cancelButton">Exportera</button>
+      </div>
+    </div>
   </div>
 </html>
