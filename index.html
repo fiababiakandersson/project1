@@ -11,8 +11,9 @@
   </head>
   <body>
     <header>
-      <button>Ladda upp</button><button id="exportBtn">Exportera</button
-      ><button>Skriv ut</button>
+      <button>Ladda upp</button>
+      <button id="exportBtn">Exportera</button>
+      <button>Skriv ut</button>
     </header>
     <div class="contentContainer">
       <div class="fileListContainer">
@@ -82,94 +83,98 @@
       <div class="footerImg"><img src="assets/img.png" alt="Image" /></div>
       <img src="assets/icons/arrowRight.png" alt="Right arrow" />
     </footer>
-  </body>
 
-  <!-- export popup -->
-  <div id="exportPopup" class="exportPopupBackground">
-    <div class="exportPopup">
-      <p>Exportera</p>
-      <div>
+    <!-- export popup -->
+    <div id="exportPopup" class="exportPopupBackground">
+      <div class="exportPopup">
+        <p>Exportera</p>
 
-     
-      <div class="saveBox">
-        <div>
-          <input name="save" type="radio" id="originalPlace" />
-          <label for="originalPlace">Spara till ursprunglig plats</label>
-        </div>
-        <div>
-          <input name="save" type="radio" id="saveIn" />
-          <label for="saveIn">Spara i:</label>
-          <p class="fileUrlText">User/desktop/files/batchjob/export</p>
-          <label class="fileInput">...</label>
-          <input style="display: none" type="file" />
-        </div>
-      </div>
-        
-      <div class="dividerHorizontal"></div>
-
-      <div class="contentLayout">
-
-      <div class="fileListBox">
-        <p>Filer som ska exporteras:</p>
-        <div class="exportFileList">
-          <div class="exportFileListItem">
-            <p class="listedFileText">1</p>
-            <div class="fileItemBg">
-              <img src="/assets/imgDark.png" alt="" />
-              <p class="listedFileText">Bildens_namn_version_1</p>
-            </div>
+        <div class="saveBox">
+          <div>
+            <input name="save" type="radio" id="originalPlace" />
+            <label for="originalPlace">Spara till ursprunglig plats</label>
           </div>
-          <div class="exportFileListItem">
-            <p class="listedFileText">2</p>
-            <div class="fileItemBg">
-              <img src="/assets/imgDark.png" alt="" />
-              <p class="listedFileText">Bildens_namn_version_1</p>
-            </div>
-          </div>
-          <div class="exportFileListItem">
-            <p class="listedFileText">3</p>
-            <div class="fileItemBg">
-              <img src="/assets/imgDark.png" alt="" />
-              <p class="listedFileText">Bildens_namn_version_1</p>
-            </div>
-          </div>
-          <div class="exportFileListItem">
-            <p class="listedFileText">4</p>
-            <div class="fileItemBg">
-              <img src="/assets/imgDark.png" alt="" />
-              <p class="listedFileText">Bildens_namn_version_1</p>
-            </div>
-          </div>
-          <div class="exportFileListItem">
-            <p class="listedFileText">5</p>
-            <div class="fileItemBg">
-              <img src="/assets/imgDark.png" alt="" />
-              <p class="listedFileText">Bildens_namn_version_1</p>
-            </div>
-          </div>
-          <div class="exportFileListItem">
-            <p class="listedFileText">6</p>
-            <div class="fileItemBg">
-              <img src="/assets/imgDark.png" alt="" />
-              <p class="listedFileText">Bildens_namn_version_1</p>
-            </div>
+          <div>
+            <input name="save" type="radio" id="saveIn" />
+            <label for="saveIn">Spara i:</label>
+            <p class="fileUrlText">User/desktop/files/batchjob/export</p>
+            <label class="fileInput">...</label>
+            <input style="display: none" type="file" />
           </div>
         </div>
-        <div class="fileExportBtnContainer">
-          <button>Ta bort</button> <button>Lägg till</button>
+
+        <div class="dividerHorizontal"></div>
+
+        <div class="contentLayout">
+          <div class="fileListBox">
+            <p>Filer som ska exporteras:</p>
+            <div class="exportFileList">
+              <div class="exportFileListItem">
+                <p class="listedFileText">1</p>
+                <div class="fileItemBg">
+                  <img src="/assets/imgDark.png" alt="" />
+                  <p class="listedFileText">Bildens_namn_version_1</p>
+                </div>
+              </div>
+              <div class="exportFileListItem">
+                <p class="listedFileText">2</p>
+                <div class="fileItemBg">
+                  <img src="/assets/imgDark.png" alt="" />
+                  <p class="listedFileText">Bildens_namn_version_1</p>
+                </div>
+              </div>
+              <div class="exportFileListItem">
+                <p class="listedFileText">3</p>
+                <div class="fileItemBg">
+                  <img src="/assets/imgDark.png" alt="" />
+                  <p class="listedFileText">Bildens_namn_version_1</p>
+                </div>
+              </div>
+              <div class="exportFileListItem">
+                <p class="listedFileText">4</p>
+                <div class="fileItemBg">
+                  <img src="/assets/imgDark.png" alt="" />
+                  <p class="listedFileText">Bildens_namn_version_1</p>
+                </div>
+              </div>
+              <div class="exportFileListItem">
+                <p class="listedFileText">5</p>
+                <div class="fileItemBg">
+                  <img src="/assets/imgDark.png" alt="" />
+                  <p class="listedFileText">Bildens_namn_version_1</p>
+                </div>
+              </div>
+              <div class="exportFileListItem">
+                <p class="listedFileText">6</p>
+                <div class="fileItemBg">
+                  <img src="/assets/imgDark.png" alt="" />
+                  <p class="listedFileText">Bildens_namn_version_1</p>
+                </div>
+              </div>
+            </div>
+            <div class="fileExportBtnContainer">
+              <button>Ta bort</button> <button>Lägg till</button>
+            </div>
+          </div>
+
+          <div class="dividerVertical"></div>
+
+          <div class="exportSettingsContainer">
+            <p>Exportinställningar</p>
+            <div>
+              <p>Filformat</p>
+              <p>Upplösning</p>
+              <p>Bredd</p>
+              <p>Höjd</p>
+              <p>Låst storleks-förhållandet</p>
+            </div>
+          </div>
         </div>
-      </div>
-    
-      <div class="dividerVertical"></div>
-
-      <div class="exportSettingsContainer"></div>
-
-      </div>
-
-      <div>
-        <button id="cancelButton">Avbryt</button>
-        <button id="cancelButton">Exportera</button>
+        <div class="buttonContainer">
+          <button id="cancelButton">Avbryt</button>
+          <button id="cancelButton">Exportera</button>
+        </div>
       </div>
     </div>
-  </div>
+  </body>
 </html>
