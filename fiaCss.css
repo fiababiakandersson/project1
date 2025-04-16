@@ -218,6 +218,10 @@ footer {
   margin: 1rem;
 }
 
+.contentLayout {
+  display: flex;
+}
+
 .saveBox {
   flex-direction: column;
   padding: 0.5rem 2rem 2rem;
@@ -235,7 +239,7 @@ footer {
   display: flex;
   gap: 8px;
 
-  p {
+  .fileUrlText {
     margin-left: 3rem;
     margin-right: 1rem;
     color: #999999;
@@ -249,28 +253,39 @@ footer {
   cursor: pointer;
 }
 
-.divider {
+/* dividers */
+
+.dividerHorizontal {
   height: 1px;
   width: 100%;
   background-color: #555555a4;
   margin: 8px auto 5px;
 }
 
-.exportFileList {
-  display: flex;
+.dividerVertical {
+  width: 1px;
+  height: 100%;
+  background-color: #555555a4;
+}
+
+/* export file list */
+
+.fileListBox {
   flex-direction: column;
-  max-width: 30%;
+  display: flex;
+  padding: 0.5rem 2rem 2rem;
+  gap: 0.5rem;
 }
 
 .exportFileListItem {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 1.3rem;
-  padding-top: 0.8rem;
+  height: 1.7rem;
+  padding-top: 1rem;
 
   img {
-    height: 1.2rem;
+    height: 1.1rem;
     width: auto;
   }
 
@@ -283,7 +298,7 @@ footer {
 
   .listedFileText {
     color: black;
-    font-size: 12.5px;
+    font-size: 12px;
     font-weight: 100;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -293,8 +308,7 @@ footer {
 .fileExportBtnContainer {
   display: flex;
   justify-content: space-between;
-  max-width: 29%;
-  margin-left: 1rem;
+  margin-left: 1.4rem;
 
   button {
     border-radius: 0;
