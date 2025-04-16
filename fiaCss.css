@@ -223,6 +223,12 @@ footer {
   padding: 0.5rem 2rem 2rem;
   display: flex;
   gap: 0.5rem;
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 1rem;
+  }
 }
 
 .saveBox > div {
@@ -248,4 +254,53 @@ footer {
   width: 100%;
   background-color: #555555a4;
   margin: 8px auto 5px;
+}
+
+.exportFileList {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+}
+
+.exportFileListItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.3rem;
+  padding-top: 0.8rem;
+
+  img {
+    height: 1.2rem;
+    width: auto;
+  }
+
+  .fileItemBg {
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.3rem;
+  }
+
+  .listedFileText {
+    color: black;
+    font-size: 12.5px;
+    font-weight: 100;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.fileExportBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 29%;
+  margin-left: 1rem;
+
+  button {
+    border-radius: 0;
+    border: none;
+    background-color: #d9d9d9;
+    margin-top: 10px;
+    padding: 0.1rem 1.4rem;
+  }
 }

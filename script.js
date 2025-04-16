@@ -1,7 +1,6 @@
 window.addEventListener("load", function () {
   const listBox = document.getElementById("fileList");
-
-  for (let index = 0; index < 90; index++) {
+  for (let index = 0; index < 60; index++) {
     const fileListItem = document.createElement("div");
     fileListItem.className = "fileListItem";
 
