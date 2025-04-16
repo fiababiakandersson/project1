@@ -197,8 +197,8 @@ footer {
 }
 
 .exportPopupBackground {
-  /* display: none; */
-  display: block;
+  display: none;
+  /* display: block; */
   background-color: #0a0a0a53;
   position: absolute;
   z-index: 999;
@@ -337,11 +337,6 @@ footer {
     margin-left: 1rem;
     max-width: 3rem;
   }
-
-  div {
-    display: flex;
-    align-items: end;
-  }
 }
 
 .buttonContainer {
@@ -353,5 +348,61 @@ footer {
   button {
     background-color: #d9d9d9;
     border: none;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 30px);
+  gap: 0.5rem;
+}
+
+.grid-item {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  label {
+    font-size: 12px;
+    font-weight: 100;
+    margin-left: 5px;
+  }
+
+  input[type="text"] {
+    background-color: #c7c5c5;
+    border: none;
+    width: 4rem;
+  }
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1.5px solid #aaa;
+    border-radius: 1px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: #aaa;
+    border-color: #858585;
+  }
+
+  input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 2.6px;
+    width: 4.5px;
+    height: 8px;
+    border: solid #535353;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
   }
 }

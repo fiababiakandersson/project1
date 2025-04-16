@@ -98,8 +98,8 @@
             <input name="save" type="radio" id="saveIn" />
             <label for="saveIn">Spara i:</label>
             <p class="fileUrlText">User/desktop/files/batchjob/export</p>
-            <label class="fileInput">...</label>
-            <input style="display: none" type="file" />
+            <label class="fileInput" for="file-upload">...</label>
+            <input id="file-upload" style="display: none" type="file" />
           </div>
         </div>
 
@@ -161,12 +161,58 @@
 
           <div class="exportSettingsContainer">
             <p>Exportinställningar</p>
-            <div>
-              <p>Filformat</p>
-              <p>Upplösning</p>
-              <p>Bredd</p>
-              <p>Höjd</p>
-              <p>Låst storleks-förhållandet</p>
+
+            <div class="grid-container">
+              <!-- 5 rows x 4 columns = 20 items -->
+              <div class="grid-item"><p>Filformat</p></div>
+              <div class="grid-item"><p>Upplösning</p></div>
+              <div class="grid-item"><p>Bredd</p></div>
+              <div class="grid-item"><p>Höjd</p></div>
+              <div class="grid-item"><p>Låst storleks-förhållandet</p></div>
+              <div class="grid-item">
+                <input type="checkbox" name="" id="jpg" /><label for="jpg"
+                  >JPG</label
+                >
+              </div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item">
+                <input type="checkbox" name="" id="jpg" />
+              </div>
+              <div class="grid-item">
+                <input type="checkbox" name="" id="png" /><label for="png"
+                  >PNG</label
+                >
+              </div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item">
+                <input type="checkbox" name="" id="jpg" />
+              </div>
+              <div class="grid-item">
+                <input type="checkbox" name="" id="psd" /><label for="psd"
+                  >PSD</label
+                >
+              </div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item">
+                <input type="checkbox" name="" id="jpg" />
+              </div>
+              <div class="grid-item">
+                <input type="checkbox" name="" id="tiff" /><label for="tiff"
+                  >TIFF</label
+                >
+              </div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item"><input type="text" /></div>
+              <div class="grid-item">
+                <input type="checkbox" name="" id="jpg" />
+              </div>
             </div>
           </div>
         </div>
