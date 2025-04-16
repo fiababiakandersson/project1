@@ -220,8 +220,8 @@ footer {
 
 .contentLayout {
   display: flex;
-  height: 60%;
-  justify-content: space-between;
+  height: 64%;
+  gap: 2rem;
   padding: 0.2rem 1rem 1rem 1rem;
   /* Top
   Right
@@ -345,5 +345,13 @@ footer {
 }
 
 .buttonContainer {
-  background-color: thistle;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  display: flex;
+  gap: 1rem;
+
+  button {
+    background-color: #d9d9d9;
+    border: none;
+  }
 }
