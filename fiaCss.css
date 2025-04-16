@@ -227,12 +227,6 @@ footer {
   padding: 0.5rem 2rem 2rem;
   display: flex;
   gap: 0.5rem;
-
-  p {
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 1rem;
-  }
 }
 
 .saveBox > div {
@@ -257,7 +251,7 @@ footer {
 
 .dividerHorizontal {
   height: 1px;
-  width: 100%;
+  width: 90%;
   background-color: #555555a4;
   margin: 8px auto 5px;
 }
@@ -275,6 +269,12 @@ footer {
   display: flex;
   padding: 0.5rem 2rem 2rem;
   gap: 0.5rem;
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 1rem;
+  }
 }
 
 .exportFileListItem {
@@ -317,4 +317,9 @@ footer {
     margin-top: 10px;
     padding: 0.1rem 1.4rem;
   }
+}
+
+/* export settings section */
+
+.exportSettingsContainer {
 }
