@@ -96,7 +96,6 @@
 /* colour part */
 
 .colourCorrection {
-  padding: 0.7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -169,6 +168,9 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 9vh;
+  margin-top: 6px;
+  background-color: #ececec;
 }
 
 .footerImg {

@@ -33,7 +33,7 @@ header {
   display: flex;
   gap: 2rem;
   padding-left: 2rem;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .contentContainer {
@@ -119,19 +119,3 @@ header {
 footer {
   height: 9vh;
 } */
-
-footer {
-  height: 11.5vh;
-  margin-top: 6px;
-  background-color: #ececec;
-}
-
-footer > div {
-  height: 10vh;
-  display: flex;
-  gap: 9px;
-}
-
-footer > div > img {
-  height: inherit;
-}

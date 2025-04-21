@@ -179,7 +179,10 @@ hr {
 }
 
 .toolsContainer > div:last-child {
-  height: 4.6vh;
+  height: 4.1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .containerTools {
@@ -191,7 +194,7 @@ hr {
 .tool1 {
   display: flex;
   flex-direction: column;
-  padding: 25px 40px;
+  padding: 0.7rem;
   justify-content: space-between;
   gap: 0.6em;
 }
@@ -207,13 +210,12 @@ hr {
 }
 
 .tool2 {
-  height: 27vh;
   line-height: 1em;
-  padding: 15px auto;
+  padding: 0.7rem;
 }
 
 .tool3 {
-  height: 25vh;
+  padding: 0.7rem;
 }
 
 .toolsContainer > div:last-child {
@@ -279,7 +281,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 40px;
   gap: 0.9em;
 }
 
@@ -315,7 +316,6 @@ span {
   display: block;
   text-align: center;
 }
-
 .tool2-slider {
   display: flex;
   gap: 10px;
@@ -344,30 +344,19 @@ span {
 
 .slider {
   -webkit-appearance: none;
-  height: 2px;
+  height: 20px;
   background: rgba(207, 207, 207, 1);
   border-radius: 2px;
   outline: none;
-  margin-top: 10px;
 }
 
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 12px;
-  height: 12px;
-  background: rgba(174, 171, 171, 1);
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: -1px;
+  margin-top: -5px !important;
 }
 
-.slider::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
+.slider::-webkit-slider-runnable-track {
   background: rgba(174, 171, 171, 1);
-  border-radius: 50%;
-  cursor: pointer;
+  height: 2px !important;
 }
 
 .labels {
