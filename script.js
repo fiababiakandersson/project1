@@ -44,7 +44,7 @@ document
   });
 
 document
-  .getElementById("cancelButton")
+  .getElementById("exportCancelButton")
   .addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -56,9 +56,9 @@ document
 // print popup logic below
 const printButton = document.getElementById("printButton");
 const printerContainer = document.querySelector(".printerContainer");
-const cancelButton = document.getElementById("cancelButton");
+const printCancelButton = document.getElementById("printCancelButton");
 
-function closePopup() {
+function closePrintPopup() {
   printerContainer.style.display = "none";
   document.body.style.overflow = "";
 }
@@ -68,10 +68,10 @@ printButton.addEventListener("click", () => {
   document.body.style.overflow = "hidden";
 });
 
-cancelButton.addEventListener("click", closePopup);
+printCancelButton.addEventListener("click", closePrintPopup);
 
 printerContainer.addEventListener("click", (e) => {
   if (e.target === printerContainer) {
-    closePopup();
+    closePrintPopup();
   }
 });
