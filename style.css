@@ -9,6 +9,11 @@ body {
   position: relative;
 }
 
+body {
+  font-family: "Inter";
+  margin: 0 20px;
+}
+
 button {
   cursor: pointer;
   padding: 0.2rem 1.1rem;
@@ -80,7 +85,7 @@ header {
   justify-content: space-between;
 }
 
-.toolsContainer {
+/* .toolsContainer {
   width: 18vw;
   display: flex;
   flex-direction: column;
@@ -113,6 +118,20 @@ header {
 
 footer {
   height: 9vh;
+} */
+
+footer {
+  height: 11.5vh;
   margin-top: 6px;
   background-color: #ececec;
+}
+
+footer > div {
+  height: 10vh;
+  display: flex;
+  gap: 9px;
+}
+
+footer > div > img {
+  height: inherit;
 }
