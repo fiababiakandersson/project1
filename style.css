@@ -510,7 +510,6 @@ footer {
 .print-cont {
   background-color: white;
   padding: 1.5rem;
-  border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   width: 600px;
   max-height: 80vh;
@@ -650,17 +649,6 @@ footer {
   background: #0066cc;
   color: white;
   border: 1px solid #0055aa;
-}
-
-.close-popup {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #666;
 }
 
 /* The switch - the box around the slider */
