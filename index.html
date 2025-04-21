@@ -1,41 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fiaCss.css" />
-    <link rel="stylesheet" href="sharinaCss.css" />
-    <title>Batch job</title>
-  </head>
-  <body>
-    <header>
-      <button>Ladda upp</button><button>Exportera</button
-      ><button>Skriv ut</button>
-    </header>
-    <div class="contentContainer">
-      <div class="fileListContainer"></div>
-      <div class="mainContentContainer">
-        <div class="content">
-          <img class="noImgFound" src="/assets/img.png" alt="noImgFound" />
-        </div>
-        <div class="layoutSelectionContainer">
-          <div>
-            <img src="assets/icons/scale1.png" alt="scale1" />
-            <img src="assets/icons/scale2.png" alt="scale2" />
-            <img src="assets/icons/scale3.png" alt="scale3" />
-            <img src="assets/icons/scale4.png" alt="scale4" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fiaCss.css" />
+  <link rel="stylesheet" href="sharinaCss.css" />
+  <script defer src="print-box.js"></script>
+  <title>Batch job</title>
+</head>
+
+<body>
+  <header>
+    <button>Ladda upp</button><button>Exportera</button><button id="printButton">Skriv ut</button>
+  </header>
+  <div class="printerContainer">
+    <div class="print-cont">
+      <button class="close-popup">&times;</button>
+      <h3 class="print-h3">Skriv ut</h3>
+      <div class="inside-print-cont">
+        <div class="print-options">
+          <div class="option-row">
+            <div class="option">
+              <label>Skrivare:</label>
+              <select class="print-select">
+                <option>Skrivarens_Namn_sparad</option>
+                <option>Skrivare 2</option>
+                <option>Skrivare 3</option>
+              </select>
+            </div>
+
+            <div class="inside-option-row">
+              <div>
+                <div class="option-row1">
+                  <div>
+                    <label>Antal:</label>
+                  </div>
+                  <div class="quantity-selector">
+                    <button class="quantity-btn">-</button>
+                    <span class="quantity-value">1</span>
+                    <button class="quantity-btn">+</button>
+                  </div>
+                </div>
+
+                <div class="option-row">
+                  <label>Papper:</label>
+                  <select class="print-select">
+                    <option>Standard</option>
+                    <option>Glansigt</option>
+                    <option>Matt</option>
+                  </select>
+                </div>
+
+                <div class="option-row">
+                  <label>Yta:</label>
+                  <select class="print-select">
+                    <option>Blankt</option>
+                    <option>Struktur</option>
+                  </select>
+                </div>
+
+                <div class="option-row">
+                  <label>Kant:</label>
+                  <select class="print-select">
+                    <option>utan kant</option>
+                    <option>med kant</option>
+                  </select>
+                </div>
+
+                <div class="option-row">
+                  <label>
+                    <input type="checkbox" checked>
+                    Bildoptimering
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <div class="preview-box">
+                  <h3>Preview</h3>
+                  <div class="preview-section">
+                    <div class="preview-placeholder">
+                      <img src="assets/img.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="action-buttons">
+                  <button class="cancel-btn" id="cancelButton">Avbryt</button>
+                  <button class="print-btn">Skriv ut</button>
+                </div>
+              </div>
+              
+            </div>
+
           </div>
-          <p>Bildens_namn_version_1</p>
+
         </div>
+
       </div>
-      <div class="toolsContainer">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+    </div>
+  </div>
+
+  <div class="contentContainer">
+    <div class="fileListContainer"></div>
+    <div class="mainContentContainer">
+      <div class="content">
+        <img class="noImgFound" src="/assets/img.png" alt="noImgFound" />
+      </div>
+      <div class="layoutSelectionContainer">
+        <div>
+          <img src="assets/icons/scale1.png" alt="scale1" />
+          <img src="assets/icons/scale2.png" alt="scale2" />
+          <img src="assets/icons/scale3.png" alt="scale3" />
+          <img src="assets/icons/scale4.png" alt="scale4" />
+        </div>
+        <p>Bildens_namn_version_1</p>
       </div>
     </div>
-    <footer></footer>
-  </body>
+    <div class="toolsContainer">
+      <div class="containerTools">
+        <div class="tool1">
+          <div>
+            <h3><strong>Bild</strong></h3>
+            <p>Dimensioner: &nbsp;1920 px <span> x </span> 1080 px</p>
+            <p>Bildstorlek: &nbsp; &nbsp; 39,7 MB</p>
+          </div>
+          <div class="transform-section">
+            <h3><strong>Transformera</strong></h3>
+            <div class="sec-transform">
+              <div class="image-div">
+                <img src="assets/icons/aspect-ratio-lock.png" alt="">
+              </div>
+              <div class="aspect-container">
+                <div class="aspect-ratio">
+                  <p>B</p>
+                  <input type="number" id="width" value="1920">
+                  <select>
+                    <option value="px">pixel</option>
+                    <option value="cm">cm</option>
+                    <option value="in">inches</option>
+                  </select>
+                </div>
+                <div class="aspect-ratio">
+                  <p>H</p>
+                  <input type="number" id="width" value="1080">
+                  <select>
+                    <option value="px">pixel</option>
+                    <option value="cm">cm</option>
+                    <option value="in">inches</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="upplosning">
+            <h3><strong>Upplösning</strong></h3>
+            <input type="number" id="width" value="300">
+            <select>
+              <option value="px">px/tum</option>
+              <option value="cm">px/cm</option>
+            </select>
+          </div>
+
+        </div>
+        <div class="tool2">
+          <div class="rotate">
+            <div>
+              <h3 class="tool2-h3">Rotera</h3>
+              <div class="rotate-deg">
+                <img class="rotate-pic" src="assets/icons/ArrowClockwise.png" alt="">
+                <p>90&deg</p>
+                <p>180&deg</p>
+                <p>270&deg</p>
+              </div>
+              <div class="tool2-slider">
+                <div>
+                  <img class="rotate-pic" src="assets/icons/ArrowClockwise.png" alt="">
+                </div>
+                <div class="slider-container">
+                  <div class="div-range">
+                    <divc class="side-div"></divc>
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="angleSlider">
+                    <div class="side-div"></div>
+                  </div>
+                  <div class="labels">
+                    <span>-180°</span>
+                    <span>0°</span>
+                    <span>180°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="spegelvand">
+              <h3 class="tool2-h3">Spegelvänd</h3>
+              <div>
+                <img src="assets/icons/Frame 31.png" alt="">
+                <img src="assets/icons/Frame 30.png" alt="">
+              </div>
+            </div>
+            <div class="crop">
+              <h3 class="tool2-h3">Crop</h3>
+              <img src="assets/icons/Frame 31-1.png" alt="">
+            </div>
+          </div>
+
+        </div>
+        <div class="tool3">
+
+        </div>
+      </div>
+
+      <div>
+
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <!-- <img src="assets/icons/lower-cont-picture2.png" alt=""> -->
+      <img src="assets/icons/lower-cont-picture2.png" alt="">
+      <img src="assets/icons/lower-cont-picture2.png" alt="">
+      <img src="assets/icons/lower-cont-picture2.png" alt="">
+      <img src="assets/icons/lower-cont-picture2.png" alt="">
+      <img src="assets/icons/lower-cont-picture1.png" alt="">
+      <img src="assets/icons/lower-cont-picture1.png" alt="">
+      <img src="assets/icons/lower-cont-picture1.png" alt="">
+      <img src="assets/icons/lower-cont-picture1.png" alt="">
+      <img src="assets/icons/lower-cont-picture1.png" alt="">
+      <img src="assets/icons/lower-cont-picture1.png" alt="">
+      <img src="assets/icons/lower-cont-picture1.png" alt="">
+    </div>
+  </footer>
+</body>
+
 </html>
