@@ -54,10 +54,8 @@ document
   });
 
 // print popup logic below
-
 const printButton = document.getElementById("printButton");
 const printerContainer = document.querySelector(".printerContainer");
-const closeButton = document.querySelector(".close-popup");
 const cancelButton = document.getElementById("cancelButton");
 
 function closePopup() {

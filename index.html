@@ -324,7 +324,6 @@
     <!-- skriv ut popup  -->
     <div class="printerContainer">
       <div class="print-cont">
-        <button class="close-popup">&times;</button>
         <h3 class="print-h3">Skriv ut</h3>
         <div class="inside-print-cont">
           <div class="print-options">
@@ -377,9 +376,10 @@
                   </div>
 
                   <div class="option-row">
-                    <label>
-                      <input type="checkbox" checked />
-                      Bildoptimering
+                    <label> Bildoptimering </label>
+                    <label class="switch">
+                      <input type="checkbox" />
+                      <span class="printSlider round"></span>
                     </label>
                   </div>
                 </div>
@@ -395,8 +395,8 @@
                   </div>
 
                   <div class="action-buttons">
-                    <button class="cancel-btn" id="cancelButton">Avbryt</button>
-                    <button class="print-btn">Skriv ut</button>
+                    <button id="cancelButton">Avbryt</button>
+                    <button id="cancelButton">Skriv</button>
                   </div>
                 </div>
               </div>

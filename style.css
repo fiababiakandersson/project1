@@ -286,7 +286,6 @@ footer {
 
 .exportPopupBackground {
   display: none;
-  /* display: block; */
   background-color: #0a0a0a53;
   position: absolute;
   z-index: 999;
@@ -540,7 +539,7 @@ footer {
 .option-row {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.3rem;
 }
 
 .option-row1 {
@@ -549,6 +548,7 @@ footer {
 }
 
 .option {
+  margin-bottom: 2rem;
   display: flex;
   gap: 30px;
 }
@@ -612,6 +612,9 @@ footer {
 .preview-placeholder {
   color: #999;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .preview-placeholder > img {
@@ -624,6 +627,11 @@ footer {
   justify-content: flex-end;
   gap: 1rem;
   margin-top: 1.5rem;
+
+  button {
+    background-color: #d9d9d9;
+    border: none;
+  }
 }
 
 .cancel-btn,
@@ -653,6 +661,71 @@ footer {
   font-size: 1.5rem;
   cursor: pointer;
   color: #666;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.printSlider {
+  position: absolute;
+  cursor: pointer;
+  height: 18px;
+  width: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.printSlider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .printSlider {
+  background-color: #34c759;
+}
+
+input:focus + .printSlider {
+  box-shadow: 0 0 1px #34c759;
+}
+
+input:checked + .printSlider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.printSlider.round {
+  border-radius: 34px;
+}
+
+.printSlider.round:before {
+  border-radius: 50%;
 }
 
 /* right side top box */
