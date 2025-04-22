@@ -502,7 +502,7 @@ span {
 }
 
 .exportPopupBackground {
-  /* display: none; */
+  display: none;
   background-color: #0a0a0a53;
   position: absolute;
   z-index: 999;
