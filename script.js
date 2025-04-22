@@ -1,3 +1,5 @@
+// render image list elements on window load (the left aside)
+
 window.addEventListener("load", function () {
   const listBox = document.getElementById("fileList");
   for (let index = 0; index < 60; index++) {
@@ -27,7 +29,7 @@ window.addEventListener("load", function () {
   }
 });
 
-// export popup
+// export popup logic below
 
 let isExportPopupOpen = false;
 
@@ -52,6 +54,14 @@ document
 
     popup.classList.remove("visible");
   });
+
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    isExportPopupOpen = !isExportPopupOpen;
+
+    popup.classList.toggle("visible", isExportPopupOpen);
+  }
+});
 
 // print popup logic below
 const printButton = document.getElementById("printButton");
